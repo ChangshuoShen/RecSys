@@ -113,7 +113,7 @@
         * 基线模型: 包括Caser, HGN, GRU4Rec, BERT4Rec, SASRec, FMLP-Rec, FDSA, S3-Rec, P5-CID, TIGER等。
         * 评估指标: 使用HR(Hit Ratio)@K和NDCG@K（K=1,5,10），采用留一法进行全排名评估。
             * HR：衡量推荐列表中是否包含目标物品(ground-truth item)，针对的是单个目标物品
-                * $HR@K = \frac{\#Hits}{\#Users}$
+                * $HR@K = \frac{\# Hits}{\# Users}$
                 * 只要目标物品出现在推荐列表的前 K 个位置，就认为命中
             * NDCG：同(TIGER中)
         * 实现细节: 项目索引构建、模型优化参数、微调策略等。
